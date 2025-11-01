@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LbisTech | BootCamp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/download.png" type="image/x-icon">
+</head>
+<body>
+  <h4 class="logo mr-auto"><a href="index.html"><img src="img/download.png" class="img-fluid" alt=""></a></h4>
+
+  <h1>ECS Project 💌</h1>
+
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <input type="email" id="signup-email" placeholder="Email">
+    <input type="password" id="signup-password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+  </div>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="form-container" id="note-section" style="display:none;">
+    <h2>Welcome <span id="user-email"></span></h2>
+    <textarea id="note" placeholder="Write your note here..."></textarea>
+    <button onclick="saveNote()">Save Note</button>
+    <button onclick="fetchNotes()">Show My Notes</button>
+    <ul id="notes-list"></ul>
+  </div>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
